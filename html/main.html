@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DREAM</title>
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <a href="#">
+                <h1>DREAM</h1>
+                <p>COMMUNITY</p>
+            </a>
+        </div>
+        <div class="header__gnb">
+            <ul>
+                <li><a href="#">MY PAGE</a></li>
+                <li><a href="#">Miracle Morning Challenge</a></li>
+                <li><a href="#">Yes Sleep</a></li>
+                <li><a href="#">No Sleep</a></li>
+                <li><a href="#">Sleep Disorder</a></li>
+                <li class="user"><a href="#">JOIN</a></li>
+                <li class="user"><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- 게시판부분 1 -->
+    <div class="yse_sleep">
+        <table class="board_list">
+            <caption class="mypost">MY POST</caption>
+            <thead>
+                <h1>
+                    <a onclick="movepage(this)">BOARDTOSLEEP</a>
+                </h1>
+                <tr>
+                    <th>Num</th>
+                    <th>Title</th>
+                    <th>Writer</th>
+                    <th>Date</th>
+                    <th>like</th>
+                </tr>
+            </thead>
+            <tbody id='BOARDTOSLEEP'>
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <!-- 게시판부분 2 -->
+    <div class="no_sleep">
+        <table class="board_list">
+            <caption class="mypost">MY POST</caption>
+            <thead>
+                <h1>
+                    <a onclick="movepage(this)">BOARDTOAWAKE</a>
+                </h1>
+                <tr>
+                    <th>Num</th>
+                    <th>Title</th>
+                    <th>Writer</th>
+                    <th>Date</th>
+                    <th>like</th>
+                </tr>
+            </thead>
+            <tbody id="BOARDTOAWAKE">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 게시판부분 3 -->
+    <div class="sleep_disorder">
+        <table class="board_list">
+            <caption class="mypost">MY POST</caption>
+            <thead>
+                <h1><a onclick="movepage(this)">BOARDTOHEAL</a></h1>
+                <tr>
+                    <th>Num</th>
+                    <th>Title</th>
+                    <th>Writer</th>
+                    <th>Date</th>
+                    <th>like</th>
+                </tr>
+            </thead>
+            <tbody id="BOARDTOHEAL">
+                
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="../js/main_api.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

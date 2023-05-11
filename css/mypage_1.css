@@ -8,7 +8,7 @@
 /* 전체 배경화면 */
 body {
   height: 100vh;
-  background: url("/img/back.jpg") no-repeat;
+  background: url("../img/back.jpg") no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
