@@ -5,6 +5,7 @@
   text-decoration: none;
 }
 
+/* 전체 배경화면 */
 body {
   height: 100vh;
   background: url("/img/back.jpg") no-repeat;
@@ -12,8 +13,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-top: 50px;
+  margin-left: 130px; */
+  width: 90%;
 }
 
+/* 프로필 카드 */
 .profile-card {
   width: 400px;
   text-align: center;
@@ -21,6 +26,7 @@ body {
   overflow: hidden;
 }
 
+/* 프로필 카드 헤더  */
 .card-header {
   /* background: #2c3a47; */
   background: transparent;
@@ -37,25 +43,6 @@ body {
   margin: auto;
   border-radius: 50%;
   background-size: 200% 200%;
-  animation: animated-dient 2s linear infinite;
-}
-
-@keyframes animated-gradient {
-  25% {
-    background-position: left bottom;
-  }
-
-  50% {
-    background-position: right bottom;
-  }
-
-  75% {
-    background-position: right top;
-  }
-
-  100% {
-    background-position: left top;
-  }
 }
 
 .pic img {
@@ -100,4 +87,43 @@ body {
   width: 1px;
   height: 30px;
   background: #bbb;
+}
+
+/* 게시판 부분 */
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.board-list-wap {
+  margin-left: 180px;
+}
+
+.board_list {
+  width: 200%;
+  margin-left: -70px;
+  justify-content: center;
+  border: 2px solid #fff;
+  color: black;
+}
+
+.board_list th,
+.board_list td {
+  border-bottom: 2px solid #fff;
+  background-color: #d9b7d2;
+  padding: 10px;
+  width: 5px;
+  text-align: center;
+}
+
+.board_list tbody tr td:nth-child(2):hover {
+  text-decoration: underline;
 }
