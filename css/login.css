@@ -19,11 +19,11 @@ section {
 .form-box {
   position: relative;
   width: 400px;
-  height: 450px;
+  height: 500px;
   background: transparent;
-  border: 2px solid rgba(255,255,255,0.6);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 20px;
-  backdrop-filter: blur(.9375rem);
+  backdrop-filter: blur(0.9375rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@ h2 {
   color: #fff;
   font-size: 1em;
   pointer-events: none;
-  transition: 0.5s; 
+  transition: 0.5s;
 }
 
 input:focus ~ label,          /* email,password hever */
@@ -76,53 +76,63 @@ input:valid ~ label {
   top:20px;
 }
 
+/* 아이콘  */
+/* .inputlogin {
+  width: 310px;
+  color: #fff;
+  /* justify-content: center;
+  align-items: center; */
+  /* font-size: 33px; */
+/*}*/ 
+
+.inputlogin .icon_icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.4em;
+  top: 20px;
+}
 .forget {
-    margin: -15px 0 15px;
-    font-size: .9em;
-    color: #fff;
-    display: flex;
-    justify-content: center;
+  margin: -10px 0 30px;
+  font-size: 0.9em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .forget label input {
-    margin-right: 3px;
+  margin-right: 3px;
 }
 
 .forget label a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .forget label a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 button {
-    width: 100%;
-    height: 40px;
-    border-radius: 40px;
-    background: #fff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-.register {
-    font-size: .9em;
-    color: #fff;
-    text-align: center;
-    margin: 25px 0 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .register p a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
 }
 
 .register p a:hover {
-    text-decoration: underline;
-
+  text-decoration: underline;
 }
+
