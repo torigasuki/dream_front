@@ -5,46 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DREAM ⎜ LOGIN</title>
-    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
     <!-- 로그인부분 -->
     <section>
       <div class="form-box">
         <div class="form-value">
-          <form action="">
+          <div>
             <h2>Login</h2>
             <div class="inputbox">
               <ion-icon name="mail-outline"></ion-icon>
-              <input type="email" required />
-              <label for="">Email</label>
+              <input id="email" type="email" required />
+              <label for="email">Email</label>
             </div>
             <div class="inputbox">
               <ion-icon name="lock-closed-outline"></ion-icon>
-              <input type="password" required />
-              <label for="">password</label>
+              <input id ="password" type="password" required />
+              <label for="password">password</label>
             </div>
             <div class="forget">
-              <label for=""
-                ><input type="checkbox" />Remember Me
+              <label for="remember">
+                <input type="checkbox" name="remember"/>Remember Me
                 <a href="#">Forget Password</a>
               </label>
             </div>
-            <button>Log in</button>
+            <button id="login">Log in</button>
             <div class="register">
-              <p>Don't have a account <a href="#">Register</a></p>
+              <p>Don't have a account <a href="signup.html">Register</a></p>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src = "../js/login_api.js"></script>
+    <script type="module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
   </body>
 </html>

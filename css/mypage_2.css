@@ -6,9 +6,14 @@
 }
 
 body {
-  height: 100vh;
-  background: url("/img/back.jpg") no-repeat;
+  background: url("../img/back.jpg") no-repeat;
+  background-position: center;
   background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,13 +24,13 @@ body {
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 .card-header {
-  /* background: #2c3a47; */
   background: transparent;
   border: 2px solid #fff;
-  /* border-radius: 20px; */
   backdrop-filter: blur(0.9375rem);
   padding: 60px 40px;
 }
@@ -40,7 +45,7 @@ body {
   animation: animated-dient 2s linear infinite;
 }
 
-@keyframes animated-gradient {
+/* @keyframes animated-gradient  일단 삭제금지{
   25% {
     background-position: left bottom;
   }
@@ -56,7 +61,7 @@ body {
   100% {
     background-position: left top;
   }
-}
+} */
 
 .pic img {
   display: block;
@@ -100,4 +105,44 @@ body {
   width: 1px;
   height: 30px;
   background: #bbb;
+}
+
+/* 게시판 부분 */
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.board-list-wap {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 90px;
+}
+
+.board_list {
+  width: 100%;
+  justify-content: center;
+  border: 2px solid #fff;
+  color: black;
+}
+
+.board_list th,
+.board_list td {
+  border-bottom: 2px solid #fff;
+  background-color: #d9b7d2;
+  padding: 10px;
+  width: 5px;
+  text-align: center;
+}
+
+.board_list tbody tr td:nth-child(2):hover {
+  text-decoration: underline;
 }
