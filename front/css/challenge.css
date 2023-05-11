@@ -66,10 +66,14 @@ button {
   border: 5px solid rgb(227, 217, 217);
   background-color: rgb(227, 217, 217);
   box-shadow: 5px 5px 5px 5px rgb(9, 9, 9);
+  font-size: 70px;
+  font-weight: bold;
 }
 
-.button {
-  color: #df6363;
-  font-size: 90px;
-  font-weight: bold;
+img {
+  margin-top: 90px;
+  text-align: center;
+  width: 80%;
+  height: 600px;
+  margin-left: 145px;
 }
