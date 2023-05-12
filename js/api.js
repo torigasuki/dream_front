@@ -237,7 +237,7 @@ export async function boardWrite(){
     const title = document.getElementById('title').value
     const content = document.getElementById('content').value
     const url = `${BACK_BASE_URL}/boards/`
-    
+    console.log(BOARD_TYPE)
     const response = await fetch(url,{
         headers : {
             'Content-Type':'application/json',
@@ -252,7 +252,7 @@ export async function boardWrite(){
         })
     })
     if(response.status == 200){
-        window.location.href = `${FRONT_BASE_URL}/html/no_board.html?board_type=${BOARD_TYPE}`
+        window.location.href = `${FRONT_BASE_URL}/html/no_board.html?boardtype=${BOARD_TYPE}`
     }
 }
 export async function mypage(){
