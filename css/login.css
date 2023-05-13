@@ -11,7 +11,7 @@ section {
   min-height: 100vh;
   width: 100;
 
-  background: url('../img/back.jpg')no-repeat;
+  background: url("/img/back.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -73,17 +73,16 @@ input:valid ~ label {
   right: 8px;
   color: #fff;
   font-size: 1.2em;
-  top:20px;
+  top: 20px;
 }
 
 /* 아이콘  */
-/* .inputlogin {
+/* .inputlogin 
   width: 310px;
   color: #fff;
   /* justify-content: center;
   align-items: center; */
-  /* font-size: 33px; */
-/*}*/ 
+/* font-size: 33px; */
 
 .inputlogin .icon_icon {
   position: absolute;
@@ -124,6 +123,7 @@ button {
   font-size: 1em;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-top: 2px;
 }
 
 .register p a {
@@ -135,4 +135,3 @@ button {
 .register p a:hover {
   text-decoration: underline;
 }
-

@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url("../img/back3.jpg") no-repeat;
+  background: url("/img/back3.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -52,6 +52,7 @@ body {
 
 .user {
   float: right;
+  margin-right: 95px;
 }
 
 /* 게시판부분 */
@@ -89,7 +90,7 @@ a {
 }
 
 .bt_wrap {
-  margin-top: 30px;
+  margin-top: 45px;
   text-align: center;
   font-size: 0;
 }

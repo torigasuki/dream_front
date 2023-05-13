@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url("../img/back3.jpg") no-repeat;
+  background: url("/img/back3.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -27,13 +27,13 @@ body {
   letter-spacing: 2px;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #e5e1e1;
+  color: #fff;
 }
 
 .header_logo p {
   font: bold 12px "arial";
   margin-top: -1px;
-  color: #e5e1e1;
+  color: #fff;
 }
 
 .header__gnb ul {
@@ -47,13 +47,14 @@ body {
 .header__gnb ul li a {
   display: block;
   font: bold 14px "arial";
-  color: #999;
+  color: #fff;
   margin: 0px 16px;
   letter-spacing: 1px;
 }
 
 .user {
   float: right;
+  margin-right: 95px;
 }
 
 /* 버튼 상단 부분 */
@@ -76,4 +77,5 @@ img {
   width: 80%;
   height: 600px;
   margin-left: 145px;
+  margin-bottom: 50px;
 }

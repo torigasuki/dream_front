@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DREAM ⎜ SIGNUP</title>
-    <link rel="stylesheet" href="../css/signup.css" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="/css/signup.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -23,49 +23,49 @@
   <body>
     <div class="container">
       <div class="signup-form">
-        <div>
+        <form>
           <h2>SIGN UP</h2>
           <div class="signup-input-box">
             <i class="bx bxs-user"></i>
-            <input id="nickname" type="text" name="Nickname" placeholder="Nickname" />
+            <input type="text" name="Nickname" placeholder="Nickname" />
           </div>
           <div class="signup-input-box">
 
 
             <!-- 이메일 인증 부분 -->
-            <i class='bx bx-mail-send' id="verify" onclick="hello();"></i>
-            <input id="email" type="email" name="Email" placeholder="Emai(icon click)" />
+            <i class='bx bx-mail-send' onclick="hello();""></i>
+            <input type="email" name="Email" placeholder="Emai(icon click)" />
           </div>
           <!-- 여기까지 -->
 
 
           <div class="signup-input-box">
             <i class='bx bxs-user-check'></i>
-            <input id="emailconfirm" type="password" name="emailconfirm" placeholder="Secret Code" />
+            <input type="password" name="Password" placeholder="Secret Code" />
           </div>
           <div class="signup-input-box">
             <i class="bx bxs-lock-alt"></i>
-            <input id="password" type="password" name="Password" placeholder="Password" />
+            <input type="password" name="Password" placeholder="Password" />
           </div>
           <div class="signup-input-box">
             <i class="bx bxs-lock-alt"></i>
             <input
-              id="cpassword"
               type="password"
               name="cPassword"
               placeholder="Password Check"
             />
           </div>
+
           <div class="signup-btn">
-            <input class="btn" value="JOIN" id="signup" style="text-align: center;"/>
+            <input type="submit" class="btn" value="JOIN" />
           </div>
           <div class="group">
             <span><a href="#">Forget_Password</a></span>
-            <span><a href="login.html">Login</a></span>
+            <span><a href="#">Login</a></span>
           </div>
-        </div>
+        </form>
       </div>
     </div>
-    <script type="module" src = "../js/signup_api.js"></script>
+    <script src="/signup.js"></script>
   </body>
 </html>
