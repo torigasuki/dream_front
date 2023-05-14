@@ -1,5 +1,4 @@
 import {boardAllView,injectNavbar,logout,navbar} from './api.js'
-
 window.onload = async function(){
     await boardAllView()
     await injectNavbar()

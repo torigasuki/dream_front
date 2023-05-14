@@ -8,7 +8,8 @@ window.onload = async function(){
     document.getElementById('cancel').addEventListener('click', async function(){
         history.back();
     })
-    await navbar()
+
+    navbar()
     if(localStorage.getItem('access')){
         document.getElementById('logout').addEventListener('click', async function(){
             logout();

@@ -9,7 +9,6 @@ if (localStorage.getItem("payload")){
     const kakao_code = new URLSearchParams(window.location.search).get('code')
     kakaoLoginApi(kakao_code)
 }
-
 async function kakaoLoginApi(kakao_code) {
     const response = await fetch(`http://127.0.0.1:8000/users/kakao/`, {
         method: 'POST',

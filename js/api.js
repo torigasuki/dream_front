@@ -306,7 +306,6 @@ export async function mypage(){
 }
 
 
-
 export async function mypageput(){
     id = localStorage.getItem('payload').user_id
     const url = `${BACK_BASE_URL}/api/users/${id}/`
